@@ -1,0 +1,56 @@
+
+    {
+        "key": "group_efy_trening",
+        "title": "Informacje o treningu",
+        "fields": [
+            {
+                "key": "field_efy_trn_cena",
+                "label": "Cena",
+                "name": "cena",
+                "type": "text"
+            },
+            {
+                "key": "field_efy_trn_czas",
+                "label": "Czas trwania",
+                "name": "czas_trwania",
+                "type": "text"
+            },
+            {
+                "key": "field_efy_trn_kopis",
+                "label": "Krótki Opis",
+                "name": "krotki_opis",
+                "type": "text"
+            },
+            {
+                "key": "field_efy_trn_termin",
+                "label": "Termin",
+                "name": "termin",
+                "type": "date_time_picker",
+                "display_format": "d.m.Y H:i",
+                "return_format": "d.m.Y H:i",
+                "first_day": 1
+            },
+            {
+                "key": "field_efy_trn_prowadzacy",
+                "label": "Prowadzący",
+                "name": "prowadzacy",
+                "type": "text"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "trening"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "active": true,
+        "show_in_rest": 1
+    }

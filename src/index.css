@@ -1,0 +1,79 @@
+.training_list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+    justify-content: center; 
+  }
+  
+  .training_box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    width: calc(100% - 40px);
+    max-width: 500px; 
+    margin: 0 auto; 
+  }
+  
+  .training_box:hover {
+    transform: translateY(-5px);
+  }
+  .training_thumb {
+    text-align:center;
+  }
+  .training_title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+     a{
+        color: #0f39c2; 
+        text-decoration: none;
+        &:hover {
+            color: #0f89c2; 
+        }
+     }
+   
+  }
+  
+  .training_desc {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .training_price {
+    font-size: 18px;
+    color: #ee371f;
+  }
+  .training_person {
+    font-size:14px;
+    color:#000;
+        span {
+            color:#0f39c2;
+            font-weight:bold;
+        }
+  }
+  .training_date {
+    font-size: 14px;
+    color: #303030;
+    margin-bottom: 5px;
+    font-weight:bold;
+    span {
+        font-weight:bold;
+        color:#666;
+    }
+  }
+
+  
+  @media screen and (max-width: 1024px) {
+    .training_list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .training_list {
+      grid-template-columns: 1fr;
+    }
+  }
